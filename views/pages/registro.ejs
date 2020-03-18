@@ -1,0 +1,109 @@
+<%- contentFor ('body') %>
+
+<h1 class="pl-5 text-light">Introduce tus datos para generar tu RFC</h1>
+
+<form class="text-light col-md-8 p-md-5" method="POST">
+  <!-- Capturar nombre-->
+  <div class="form-group">
+    <label for="name">Nombre(s)</label>
+    <div>
+      <input
+        required
+        id="name"
+        name="name"
+        type="text"
+        placeholder="Tu nombre(s)"
+        class="form-control"
+        pattern="[A-Za-z ]{1,25}"
+      />
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="lname1">Apellido Paterno</label>
+    <div>
+      <input
+        required
+        id="lname1"
+        type="text"
+        name="lname1"
+        placeholder="Apellido Paterno"
+        class="form-control"
+        pattern="[A-Za-z ]{1,20}"
+      />
+    </div>
+  </div>
+
+  <div class="form-group pb-4">
+    <label for="lname2">Apellido Materno</label>
+    <input
+      required
+      id="lname2"
+      type="text"
+      name="lname2"
+      placeholder="Apellido Materno"
+      class="form-control"
+      pattern="[A-Za-z ]{1,20}"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="gender">Sexo</label>
+    <select name="sexo" class="form-control" id="gender">
+      <option value="H">Hombre</option>
+      <option value="M">Mujer</option>
+    </select>
+  </div>
+
+  <div class="form-group pt-2">
+    <label for="dbirth"><strong>Fecha de nacimiento</strong></label>
+    <input required
+      type="date"
+      id="dbirth"
+      name="dateBrt"
+      min="1920-01-01"
+      max="2001-12-31"
+    />
+  </div>
+
+  <div class="form-group pt-4">
+    <label for="state">Lugar de nacimiento</label>
+    <select name="estado" class="form-control" id="state">
+      <option value="AG">Aguascalientes</option>
+      <option value="BC">Baja California</option>
+      <option value="BS">Baja California Sur</option>
+      <option value="CM">Campeche</option>
+      <option value="CS">Chiapas</option>
+      <option value="CH">Chihuahua</option>
+      <option value="CX">Ciudad de Mexico</option>
+      <option value="CO">Coahuila</option>
+      <option value="CL">Colima</option>
+      <option value="DG">Durango</option>
+      <option value="EM">Estado de México</option>
+      <option value="GT">Guanajuato</option>
+      <option value="GR">Guerrero</option>
+      <option value="HG">Hidalgo</option>
+      <option value="JC">Jalisco</option>
+      <option value="MI">Michoacán</option>
+      <option value="MO">Morelos</option>
+      <option value="NA">Nayarit</option>
+      <option value="NL">Nuevo León</option>
+      <option value="OA">Oaxaca</option>
+      <option value="PU">Puebla</option>
+      <option value="QT">Querétaro</option>
+      <option value="QR">Quintana Roo</option>
+      <option value="SL">San Luis Potosí</option>
+      <option value="SI">Sinaloa</option>
+      <option value="SO">Sonora</option>
+      <option value="TB">Tabasco</option>
+      <option value="TM">Tamaulipas</option>
+      <option value="TL">Tlaxcala</option>
+      <option value="VE">Veracruz</option>
+      <option value="YU">Yucatán</option>
+      <option value="ZA">Zacatecas</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-light">
+    Calcular RFC
+  </button>
+</form>

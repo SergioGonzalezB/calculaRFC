@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><% title %></title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Layout" />
+    <meta name="author" content="Sergio Gonzalez 15211300" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <script src="/js/boostrap.bundle.js"></script>
+
+    <body>
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="/">Practica</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link" href="/">Inicio</a>
+              <a class="nav-item nav-link" href="/registro">Registro</a>
+              <a class="nav-item nav-link" href="/about">Acerca de</a>
+            </div>
+          </div>
+        </nav>    
+      </header>
+
+    <main>
+      <%- body %>
+    </main>
+
+<!-- Footer -->
+<footer class="page-footer font-small grey lighten-3 py-4 dark-grey-text bg-dark">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-4">
+        <h3 class="font-weight-bold mb-0 text-light">Practica RFC</h3>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-unstyled d-flex justify-content-center mb-0 mt-2">
+          <li>
+          	<a class="mx-3" href="/" role="button">Inicio</a>
+          </li>
+          <li>
+          	<a class="mx-3" href="/about" role="button">Acerca de</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4 text-light">
+        <!-- Copyright -->
+        <div class="footer-copyright text-right bg-transparent dark-grey-text mt-2">Sergio Gonzalez © 2019.
+          <a class="dark-grey-text" href="https://mdbootstrap.com/education/bootstrap/"> All rights reserved.</a>
+        </div>
+        <!-- Copyright -->
+      </div>
+    </div>
+
+  </div>
+  <!-- Footer Elements -->
+
+</footer>
+<!-- Footer -->
+
+    </html>

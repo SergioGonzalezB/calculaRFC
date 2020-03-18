@@ -1,0 +1,26 @@
+{
+  "name": "practica-rfc",
+  "version": "1.0.0",
+  "description": "Practica RFC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "NODE",
+    "EXPRESS",
+    "RFC"
+  ],
+  "author": "Sergio Gonzalez",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.4.1",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "nodemon": "^2.0.2"
+  },
+  "devDependencies": {}
+}
